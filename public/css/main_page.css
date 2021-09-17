@@ -1,0 +1,407 @@
+
+body {
+  padding-top: 56px;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,234,252,1) 100%);
+    
+  animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+
+.title{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size:35px;
+  text-align:center;
+  color:black;
+  
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.titleWhite{
+  color:white;
+  text-decoration: none;
+}
+
+.fuente_navbar{
+  font-family: 'Play', sans-serif;
+}
+
+.centro{
+  justify-content:center;
+  text-align:center;
+}
+
+.hover{
+  text-decoration: none;
+  color:white;
+}
+
+.transparent_black{
+  background-color:rgba(0, 0, 0, 0.87);
+}
+
+.more_transparent_black{
+  background-color:rgba(0, 0, 0, 0.555);
+}
+
+.bordes{
+  
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.863);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.863);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.863);
+}
+
+
+/* =========Efectos Hovering============ */
+.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* effect-shine */
+a.effect-shine:hover {
+  
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 100%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 50px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-family: inherit;
+}
+
+.btn-small{
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 30px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  font-family: inherit;
+}
+
+
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--radius-2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn--pill {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.btn--green {
+  background: #17f04d;
+}
+
+.btn--green:hover {
+  background: #17f04d;
+}
+
+.btn--blue {
+  background: #4272d7;
+}
+
+.btn--blue:hover {
+  background: #3868cd;
+}
+
+.btn--red {
+  background: #ff4b5a;
+}
+
+.btn--red--nohover{
+  background: #ff4b5a;
+}
+
+
+.btn--red:hover{
+  background-color: #17f04d;
+}
+
+.center{
+  text-align: center;
+}
+
+.btn--no{
+  background: #ff4b5a;
+}
+
+.fila{
+  margin-left: 5%;
+}
+
+.marca{
+  font-size: 20px;
+  font-family: 'Nova Flat', cursive;
+  font-weight:bold;
+}
+
+.fuente_anuncios{
+  font-family: 'Baloo 2', cursive;
+}
+
+.precio{
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+}
+
+.modal_precios{
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.sombra{
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #00a2ff;
+  
+}
+
+.span_sombras{
+  box-shadow:
+    8px 8px 10px 0px rgba(85, 139, 255, 0.075), 
+    -5px -5px 5px 0px rgba(0, 217, 255, 0.644), 
+    5px 5px 15px 0px rgba(0, 238, 255, 0.247);
+    padding: 0em 1em;
+    border-radius: 16px;
+}
+
+.subrallado:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.modelo{
+  font-weight: bold;
+}
+
+
+.ul{
+  padding-top: 5%;
+}
+
+
+.card-img-top{
+  width: 40%;
+  height: 40%;
+}
+
+.añadir{
+  width: 27px;
+  margin-top: 10px;
+}
+
+.top{
+  position: absolute;
+  top: 25%;
+  width:27px; 
+  height : 27px;
+  
+}
+
+.blanco{
+  color:white;
+}
+
+.dinero{
+  font-family: 'Baloo 2', cursive;
+  margin-left: 25%;
+}
+
+.letra{
+  font-family: 'Baloo 2', cursive;
+}
+
+.email{
+  margin-left: 9%;
+}
+
+.Euro{
+  color: #17f04d;
+  font-weight: bold;
+  
+}
+
+@media (max-width: 1200px) {
+  .email {
+    position: absolute;
+    top: 23%;
+    left:30%;
+    width:27px; 
+    height : 27px;
+  
+  }
+}
+
+@media (max-width:1200px) {
+  .icon {
+    position: absolute;
+    top: -9%;
+    left: 800%;
+    width: 27px;
+    height: 27px;
+  
+  }
+}
+
+@media (max-width: 1200px) {
+  .money {
+    position: absolute;
+    top: 70%;
+    left:350%;
+    width:27px; 
+    height : 27px;
+  
+  }
+}
+
+.icono {
+  position: absolute;
+  left:30%;
+  top: 3%;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+.margen{
+  margin-top:200px;;
+}
+
+.margen_pequeno{
+  margin-top:76px;
+}
+
+.label{
+  font-family: 'Play', sans-serif;
+  color:white;
+}
+
+.down{
+  margin-bottom: 5%;
+}
+
+.bold{
+  font-weight: bold;
+  font-size:30px
+}
+
+/* alineacion de placeholders */
+input[type="number"]::placeholder { 
+                  
+  /* Firefox, Chrome, Opera */
+  text-align: right;
+}
+
+/*Para quitar las flechitas que se asignan al poner input type="number"*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
